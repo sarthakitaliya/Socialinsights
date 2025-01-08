@@ -38,7 +38,7 @@ const Chatbot = () => {
     setLoading(true);
     
     try {
-      const response = await axios.post(url, {
+      const response = await axios.post(`${url}/chat`, {
         input: newInput,
       });
 
