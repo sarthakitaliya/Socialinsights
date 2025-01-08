@@ -65,7 +65,7 @@ The goal of this project is to:
 
 ---
 
-## How it Works
+## How it Works (Brief)
 1. The user inputs their query.
 2. Langflow API is called.
 3. The user question is searched in Astra DB.
