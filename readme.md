@@ -13,11 +13,12 @@
 4. [Features](#features)
 5. [Video Demonstration](#video-demonstration)
 6. [Langflow Workflow](#langflow-workflow)
+7. [How it Works](#how-it-works)
 
 ---
 
 ## Introduction
-**Social Insights** is a simple analytics module designed to analyze engagement data from mock social media accounts. The project uses **Langflow** for workflow creation and GPT integration, and **DataStax Astra DB** for database operations. It provides insights into post-performance metrics to help identify trends and optimize content strategies.
+**Social Insights** is a simple AI-powered chat app that provides insights and metrics based on data. It uses the Langflow API for responses. In Langflow, we utilized Astra DB and Google Gemini for AI processing.
 
 ---
 
@@ -26,7 +27,7 @@ The goal of this project is to:
 1. Simulate social media engagement data.
 2. Store and query data using **DataStax Astra DB**.
 3. Use **Langflow** to analyze the data and calculate engagement metrics based upon user input.
-4. Leverage GPT integration to generate insights about post-performance.
+4. Leverage GPT (Google Gemini) integration to generate insights about post-performance.
 
 ---
 
@@ -63,3 +64,13 @@ The goal of this project is to:
 ![Langflow Workflow](<https://github.com/sarthakitaliya/Socialinsights/blob/main/langflow/work%20flow.png>)
 
 ---
+
+## How it Works
+1. The user inputs their query.
+2. Langflow API is called.
+3. The user question is searched in Astra DB.
+4. The retrieved data is sent to the prompt component.
+5. The prompt combines the user question and context (from the database).
+6. The prompt is sent to the Gemini system message with additional context.
+7. Finally, the AI generates and returns an answer.
+
