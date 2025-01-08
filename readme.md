@@ -60,6 +60,6 @@ The goal of this project is to:
 ---
 
 ## Langflow Workflow
-![Langflow Workflow](<insert-image-link>)
+![Langflow Workflow](<https://github.com/sarthakitaliya/Socialinsights/blob/main/langflow/work%20flow.png>)
 
 ---
